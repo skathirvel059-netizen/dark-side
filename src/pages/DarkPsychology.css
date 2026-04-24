@@ -1,0 +1,101 @@
+.dark-psychology-page {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.tactics-container {
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  margin-top: 2rem;
+}
+
+.tactic-card {
+  padding: 3rem;
+}
+
+.tactic-header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.tactic-header h3 {
+  margin: 0;
+  font-size: 1.8rem;
+}
+
+.tactics-icon {
+  padding: 0.5rem;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.05);
+}
+
+.tactics-icon.purple {
+  color: var(--accent-primary);
+  background: rgba(139, 92, 246, 0.15);
+}
+
+.tactics-icon.cyan {
+  color: var(--accent-secondary);
+  background: rgba(6, 182, 212, 0.15);
+}
+
+.tactics-icon.emerald {
+  color: var(--accent-tertiary);
+  background: rgba(16, 185, 129, 0.15);
+}
+
+.tactic-desc {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 2rem;
+  max-width: 800px;
+}
+
+.tactic-content-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  border-top: 1px solid var(--border-color);
+  padding-top: 2rem;
+}
+
+.signs-section h4,
+.defense-section h4 {
+  margin-bottom: 1rem;
+}
+
+.signs-section ul {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  color: var(--text-primary);
+}
+
+.signs-section li {
+  margin-bottom: 0.75rem;
+  line-height: 1.5;
+}
+
+.defense-section p {
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.educational-disclaimer {
+  padding: 2rem;
+  border: 1px solid var(--border-color);
+}
+
+@media (max-width: 768px) {
+  .tactic-content-grid {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+  
+  .tactic-card {
+    padding: 2rem;
+  }
+}
